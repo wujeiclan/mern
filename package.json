@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/wujeiclan/mern/issues"
   },
-  "homepage": "https://github.com/wujeiclan/mern#readme"
+  "homepage": "https://github.com/wujeiclan/mern#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "path": "^0.12.7"
+  }
 }
