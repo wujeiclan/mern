@@ -4,6 +4,7 @@
   "description": "mern stack development",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,7 +19,7 @@
     "nodejs"
   ],
   "author": "Allan Semezzato",
-  "license": "ISC",
+  "license": "Deus",
   "bugs": {
     "url": "https://github.com/wujeiclan/mern/issues"
   },
@@ -28,5 +29,8 @@
     "cors": "^2.8.5",
     "express": "^4.17.3",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
