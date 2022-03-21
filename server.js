@@ -3,6 +3,7 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const path = require('path');
 const mongoose = require('mongoose');
+const routes = require('./src/routes');
 
 const app = express(); // Define e chama a aplicação toda
 const port = process.env.PORT || 7777; // Porta local predefinida para o servidor
@@ -16,18 +17,15 @@ mongoose.connect('mongodb+srv://oraculum.zlgza.mongodb.net',{
     if(err){
         console.log(err)
         } else {
-            console.log('Oraculum acessado com succeso, é isso aí Allan!')
+            console.log('Oraculum remoto conectado com succeso, é isso aí Allan!')
         }
     })
 
 app.use(cors()); // Para informar quais domínios podem estar consumindo dados dessa API
 app.use(cookieParser()); // Para trabalhar com cookies do dispositivo
 app.use(express.json()); // Para enviar e receber .json entre FrontEnd e BackEnd
-
-app.get('/', function(req, res){
-    res.json({message: 'Allan aqui'});
-} );
+app.use(routes); // Facilita e concentra o endereçamento de rotas de toda aplicação
 
 app.listen(port, function(){
-    console.log(`Servidor funcionando meu caríssimo ${port}`)
+    console.log(`Servidor funcionando meu caríssimo! Na porta: ${port}`)
 })

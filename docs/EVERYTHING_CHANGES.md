@@ -4,7 +4,7 @@
 
 0010    -   AAA
 0009    -   AAA
-0008    -   Fui esquentar um cafézinho
+0008    -   feat: add routes in server.js and realocade 'req, res' to routes.js
 0007    -   feat: found 'Wan-Shi-Tong' database into the 'Oraculum' cluster
 0006    -   chore: installed and connected Atlas Cluster named 'Oraculum' to MongoDB-Compass-Community 
 0005    -   chore!: Oraculum created.
