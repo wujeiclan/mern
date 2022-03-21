@@ -2,8 +2,7 @@ const express = require('express');
 
 const routes = express.Router();
 
-routes.get('/',function(req, res){
-    res.json({message: 'Allan aqui no Request e Response!'});
-});
+routes.get('/', User.index);
+routes.post('/api/users', User.create);
 
 module.exports = routes;
