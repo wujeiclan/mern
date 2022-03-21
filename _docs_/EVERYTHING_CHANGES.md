@@ -2,11 +2,10 @@
 <!-- FAVOR DECLARAR AS ADIÇÕES FEITAS SEGUINDO O MODELO ABAIXO, -->
 <!-- ID DE MUDANÇA <TAB> - <TAB> DESCRIÇÃO DA MUDANÇA    -->
 
-
 0010    -   AAA
 0009    -   AAA
-0008    -   AAA
-0007    -   AAA
+0008    -   Fui esquentar um cafézinho
+0007    -   feat: found 'Wan-Shi-Tong' database into the 'Oraculum' cluster
 0006    -   chore: installed and connected Atlas Cluster named 'Oraculum' to MongoDB-Compass-Community 
 0005    -   chore!: Oraculum created.
 0004    -   chore: create and organize project folders
