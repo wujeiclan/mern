@@ -22,5 +22,10 @@ module.exports = {
         }
 
         }
-    }
+    },
+    details(req, res){
+        const {_id} = req.params;
+        const user = User.find({_id});
+        res.json(user);
+    },
 }
